@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  db:
+    container_name: "mssql"
+    image: "microsoft/mssql-server-linux:latest"
+    ports:
+      - 3007:1433
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
